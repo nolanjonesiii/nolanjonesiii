@@ -1,0 +1,296 @@
+
+/* ............................................. CSS FOR RESPONSIVE NAVBAR */
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: gray;
+  margin: 0;
+
+  background-image: url("https://aquariumservicesdfw.com/wp-content/uploads/2015/06/back2015b.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+  padding: 5px 10px;
+
+  height: 85px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: blue;
+  margin: 0.5em 0;
+  text-align: center;
+  padding: 3px;
+  background-color: inherit;
+  flex: 1;
+}
+
+.nav-title {
+  line-height: 150%;
+}
+
+nav a:hover {
+  color: white;
+}
+.active {
+  background-color: ;
+}
+
+main {
+  margin-top: 85px;
+}
+
+@media (min-width: 620px) {
+  nav > a {
+    font-size: 1.1em;
+    width: 30%;
+  }
+}
+
+@media (min-width: 960px) {
+  nav > a {
+    font-size: 1.2em;
+    margin: 1em 0;
+    width: auto;
+  }
+  main {
+    margin-top: 80px;
+  }
+}
+/* ............................................. CSS FOR RESPONSIVE NAVBAR */
+
+
+
+/* ........................................................ CSS FOR HEADER */
+.flex-container-1 {
+  height: 370px;
+  background-image: url("../images/aq9.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-bottom: 5px solid black;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.header-content {
+  color: white;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-paragraph-container {
+  background: black;
+  margin: 0px 0px;
+  padding: 0px;
+  border-radius: 20px;
+  max-width: 300px;
+  border: 1px solid white;
+}
+
+.header-title {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+  flex: 1;
+}
+
+.header-content p {
+  flex: 1;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: center;
+  line-height: 170%;
+  margin: 10px;
+}
+
+.header-button {
+  flex: 1;
+  background: orange;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  width: 280px;
+  max-height: 70px;
+  margin: 20px;
+}
+
+.header-button:hover {
+  background: white;
+  color: orange;
+  cursor: pointer;
+}
+
+@media (min-width: 620px) {
+  .header-title{
+    font-size: 7vw;
+  }
+  .header-paragraph-container {
+    max-width: 400px;
+  }
+  .header-content p {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 960px) {
+  .flex-container-1 {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .header-content p {
+    font-size: 1.6em;
+  }
+  .header-title{
+    font-size: 6vw;
+  }
+}
+
+.text-shadow-1 {
+  color: ghostwhite;
+  text-shadow:
+    0 1px 0px #378ab4,
+    1px 0 0px #5dabcd,
+    1px 2px 1px #378ab4,
+    2px 1px 1px #5dabcd,
+    2px 3px 2px #378ab4,
+    3px 2px 2px #5dabcd,
+    3px 4px 2px #378ab4,
+    4px 3px 3px #5dabcd,
+    4px 5px 3px #378ab4,
+    5px 4px 2px #5dabcd,
+    5px 6px 2px #378ab4,
+    6px 5px 2px #5dabcd,
+    6px 7px 1px #378ab4,
+    7px 6px 1px #5dabcd,
+    7px 8px 0px #378ab4,
+    8px 7px 0px #5dabcd;
+}
+/* ........................................................ CSS FOR HEADER */
+
+
+
+
+
+.grid-container-1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-gap: 20px;
+  margin: 20px;
+}
+
+@media (min-width: 620px) {
+  .grid-container-1 {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-gap: 30px;
+    margin: 30px;
+  }
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { border: 1px solid white; cursor: pointer;}
+
+article {
+  position: relative;
+}
+
+article > img {
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 5px solid black;
+}
+
+@media (min-width: 620px) {
+  article > img {
+    height: 140px;
+  }
+}
+
+article h2 {
+  position: absolute;
+  font-size: 1.3em;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+.opacity-container {
+  position: relative;
+}
+
+.opacity-content {
+    position: absolute; /* Position the background text */
+    bottom: 0; top: 0; left: 0; right: 0;/* At the bottom. Use top:0 to append it to the top */
+    background: rgba(0, 0, 0, 0.6); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    border-radius: 10px;
+    margin: 5px;
+    text-align: center;
+    line-height: 150%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* */

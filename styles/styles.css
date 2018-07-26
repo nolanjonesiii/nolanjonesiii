@@ -4,7 +4,7 @@ body {
   font-family: 'Quicksand', sans-serif;
   background: black;
   margin: 0;
-  margin-top: 70px;
+  margin-top: 50px;
 
 
 }
@@ -36,12 +36,12 @@ nav {
   background-color: black;
   padding: 5px 10px;
 
-  height: 70px;
+  height: 50px;
 }
 
 nav a {
   text-decoration: none;
-  font-size: 1.1em;
+  font-size: 0.9em;
   font-weight: bold;
   color: white;
   margin: 0.5em 0;

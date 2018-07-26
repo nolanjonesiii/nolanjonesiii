@@ -11,6 +11,7 @@ body {
 
 main {
   margin: 0;
+  padding-bottom: 20px;
   background-image: url("https://aquariumservicesdfw.com/wp-content/uploads/2015/06/back2015b.jpg");
   background-size: cover;
   background-position: center;
@@ -40,7 +41,7 @@ nav {
 
 nav a {
   text-decoration: none;
-  font-size: 1em;
+  font-size: 1.1em;
   font-weight: bold;
   color: white;
   margin: 0.5em 0;
@@ -61,10 +62,6 @@ nav a:hover {
   background-color: ;
 }
 
-main {
-  margin: 0;
-}
-
 @media (min-width: 620px) {
   nav > a {
     font-size: 1.1em;
@@ -78,9 +75,6 @@ main {
     margin: 1em 0;
     width: auto;
   }
-  main {
-    margin: 0;
-  }
 }
 /* ............................................. CSS FOR RESPONSIVE NAVBAR */
 
@@ -88,7 +82,7 @@ main {
 
 /* ........................................................ CSS FOR HEADER */
 .flex-container-1 {
-  height: 370px;
+  height: 400px;
   background-image: url("../images/aq9.jpg");
   background-size: cover;
   background-position: center;
@@ -145,13 +139,13 @@ main {
   color: white;
   font-size: 20px;
   width: 280px;
-  height: 200px;
+  height: auto;
   margin: 20px;
 }
 
 .header-button:hover {
   background: white;
-  color: orange;
+  color: blue;
   cursor: pointer;
 }
 

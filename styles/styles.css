@@ -41,7 +41,7 @@ nav {
 
 nav a {
   text-decoration: none;
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: bold;
   color: white;
   margin: 0.5em 0;
@@ -132,20 +132,20 @@ nav a:hover {
 
 .header-button {
   flex: 1;
-  background: blue;
+  background: orange;
   padding: 15px;
   text-align: center;
   border-radius: 10px;
   color: white;
-  font-size: 20px;
-  width: 280px;
+  font-size: 1.1em;
+  width: 250px;
   height: auto;
   margin: 20px;
 }
 
 .header-button:hover {
   background: white;
-  color: blue;
+  color: orange;
   cursor: pointer;
 }
 
@@ -158,6 +158,10 @@ nav a:hover {
   }
   .header-content p {
     font-size: 1.5em;
+  }
+  .header-button {
+    font-size: 20px;
+    width: 280px;
   }
 }
 
@@ -224,7 +228,7 @@ article {
 }
 
 article > img {
-  height: 100px;
+  height: 70px;
   width: 100%;
   object-fit: cover;
   border-radius: 10px;
@@ -239,7 +243,7 @@ article > img {
 
 article h2 {
   position: absolute;
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: bold;
   top: 50%;
   left: 50%;
